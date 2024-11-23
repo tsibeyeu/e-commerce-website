@@ -13,58 +13,56 @@ import {
   Register,
   SingleProduct,
   Login,
-} from "./assets/pages";
-const router=createBrowserRouter([
+} from "./pages";
+const router = createBrowserRouter([
   {
-    path:"/",
-    element:<HomeLayout/>,
-    errorElement:<Error/>,
-    children:[
+    path: "/",
+    element: <HomeLayout />,
+    errorElement: <Error />,
+    children: [
       {
-        index:true,
-        element:<Landing/>
+        index: true,
+        element: <Landing />,
       },
       {
-        path:"products",
-        element:<Products/>
+        path: "products",
+        element: <Products />,
       },
       {
-        path:"products/:id",
-        element:<SingleProduct/>
+        path: "products/:id",
+        element: <SingleProduct />,
       },
       {
-        path:"cart",
-        element:<Cart/>
+        path: "cart",
+        element: <Cart />,
       },
       {
-        path:"about",
-        element:<About/>
+        path: "about",
+        element: <About />,
       },
       {
-        path:"checkout",
-        element:<Checkout/>
+        path: "checkout",
+        element: <Checkout />,
       },
       {
-        path:"orders",
-        element:<Orders/>
-      }
-    ]
+        path: "orders",
+        element: <Orders />,
+      },
+    ],
   },
   {
-    path:"/login",
-    element:<Login/>,
-    errorElement:<Error/>
+    path: "/login",
+    element: <Login />,
+    errorElement: <Error />,
   },
   {
-    path:"/register",
-    element:<Register/>,
-    errorElement:<Error/>
-  }
-])
+    path: "/register",
+    element: <Register />,
+    errorElement: <Error />,
+  },
+]);
 const App = () => {
- 
-  return  <RouterProvider router={router}/>
-  
+  return <RouterProvider router={router} />;
 };
 
 export default App;
