@@ -1,7 +1,12 @@
-
+import SectionTitle from "./SectionTitle";
+import ProductsGird from "./ProductsGird";
 const FeaturedProducts = () => {
   return (
-    <div>FeaturedProducts</div>
+    <div className="pt-24">
+      <SectionTitle text="featured products"/>
+      <ProductsGird/>
+
+    </div>
   )
 }
 
