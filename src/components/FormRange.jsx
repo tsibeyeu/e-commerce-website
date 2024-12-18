@@ -6,8 +6,8 @@ const FormRange = ({ label, name, size }) => {
   const maxPrice = 100000;
   const [selectedPrice, setSelectedPrice] = useState(maxPrice);
   return (
-    <div>
-      <label htmlFor={name} className="">
+    <div className="form-control">
+      <label htmlFor={name} className="label cursor-pointer">
         <span className="label-text capitalize">{label}</span>
         <span>{formatPrice(selectedPrice)}</span>
       </label>
