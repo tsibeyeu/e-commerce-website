@@ -51,6 +51,7 @@ const cartSlice = createSlice({
       // update no of cart items  by adding new amount minus the current amount
       state.numItemsInCart  +=amount -item,amount;
       state.cartTotal += state.price * (amount - item.amount);
+      item.amount=amount;
       cartSlice.caseReducers.calculateTotals(state);
       toast.success("Cart updated");
     },

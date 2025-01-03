@@ -10,3 +10,5 @@ export {default as Filters} from "./Filters";
 export {default as ProductContainer} from "./ProductContainer";
 export {default as PaginationContainer} from "./PaginationContainer";
 export {default as Loading} from "./Loading";
+export {CartTotals} from "./CartTotals";
+export {CartItemsList} from "./CartItemsList";
