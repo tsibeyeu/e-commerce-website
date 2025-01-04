@@ -1,10 +1,19 @@
 /* eslint-disable react/prop-types */
 
+import { useDispatch } from "react-redux";
 import { formatPrice, generateAmountOption } from "../utils";
+import { removeItem, updateCart } from "../features/cart/cartSlice";
 
 const CartItem = ({ cartItem }) => {
   const { cartID, amount, image, price, company, productColor, title } =
     cartItem;
+  const dispatch = useDispatch();
+  const removeItemFromTheCart = () => {
+    dispatch(removeItem({ cartID }));
+  };
+  const handleAmountChange = (e) => {
+    dispatch(updateCart({ cartID, amount: parseInt(e.target.value) }));
+  };
   return (
     <article
       key={cartID}
@@ -41,13 +50,20 @@ const CartItem = ({ cartItem }) => {
             name="amount"
             id="amount"
             className="select select-bordered select-base select-xs mt-2"
+            value={amount}
+            onChange={handleAmountChange}
           >
             {generateAmountOption(amount + 2)}
           </select>
         </div>
 
         {/* REMOVE */}
-        <button className=" mt-2 link link-hover link-primary">remove</button>
+        <button
+          className=" mt-2 link link-hover link-primary"
+          onClick={removeItemFromTheCart}
+        >
+          remove
+        </button>
       </div>
       {/* PRICE */}
       <p className=" font-medium sm:ml-auto">{formatPrice(price)}</p>
