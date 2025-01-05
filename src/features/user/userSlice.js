@@ -8,7 +8,7 @@ function getItemFromLocalStorage() {
   return localStorage.getItem("theme") || themes.winter;
 }
 const initialState = {
-  user: { username: "tsion beyen" },
+  user: { username: "tsion beyene" },
   theme:getItemFromLocalStorage(),
 };
 const userSlice = createSlice({
@@ -19,7 +19,9 @@ const userSlice = createSlice({
       console.log("login");
     },
     logoutUser: (state) => {
-      console.log("logout");
+      state.user =null;
+      localStorage.removeItem("user");
+      toast.success("Logged out");
     },
     toggleTheme: (state) => {
       const { dracula, winter } = themes;

@@ -2,8 +2,9 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { CartTotals, CartItemsList, SectionTitle } from "../components";
 const Cart = () => {
-  const user = null;
-  const numItemInCart = useSelector((state) => state.cart.numItemInCart);
+  const user =useSelector(state => state.user.user);
+
+  const numItemInCart = useSelector((state) => state.cart.numItemsInCart);
   if (numItemInCart === 0) {
     return <SectionTitle text="Your Cart is empty!" />;
   }
@@ -17,7 +18,7 @@ const Cart = () => {
         <div className="lg:col-span-4">
           <CartTotals />
           {user ? (
-            <Link to="/checkout" className="btn btn-primary btn-block mt-8">
+            <Link to="/checkout" className="capitalize btn btn-primary btn-block mt-8">
               {" "}
               process to checkout
             </Link>
