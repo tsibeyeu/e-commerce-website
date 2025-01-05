@@ -49,7 +49,7 @@ const cartSlice = createSlice({
       // CURRENT ITEM BY FILTERIING THEIER CARTID SELCETED CARTID
       const item=state.cartItems.find((i)=> i.cartID === cartID);
       // update no of cart items  by adding new amount minus the current amount
-      state.numItemsInCart  +=amount -item,amount;
+      state.numItemsInCart  +=amount - item.amount;
       state.cartTotal += state.price * (amount - item.amount);
       item.amount=amount;
       cartSlice.caseReducers.calculateTotals(state);
