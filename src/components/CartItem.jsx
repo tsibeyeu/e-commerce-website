@@ -17,7 +17,7 @@ const CartItem = ({ cartItem }) => {
   return (
     <article
       key={cartID}
-      className="flex flex-col sm:flex-row border-b border-base-300 gap-y-4 mb-12 pb-6 last:border-b-0 "
+      className="flex flex-col sm:flex-row border-b border-base-400 gap-y-4 mb-12 pb-6 last:border-b-0 "
     >
       <img
         src={image}
