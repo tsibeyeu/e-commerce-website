@@ -1,5 +1,25 @@
-import { Form, Link } from "react-router-dom";
+import { Form, Link, redirect } from "react-router-dom";
 import { FormInput, SubmitBtn } from "../components";
+import { customFetch } from "../utils";
+import { toast } from "react-toastify";
+export const action = async ({ request }) => {
+  const formData = await request.formData();
+  const data = Object.fromEntries(formData);
+  console.log("Data to send:", data);
+
+  try {
+    const response = await customFetch.post('/auth/local/register', data);
+    toast.success('account created successfully');
+    return redirect('/login');
+  } catch (error) {
+    const errorMessage =
+      error?.response?.data?.error?.message ||
+      'please double check your credentials';
+
+    toast.error(errorMessage);
+    return null;
+  }
+};
 const Register = () => {
   return (
     <section className="h-screen grid place-items-center">
@@ -8,17 +28,12 @@ const Register = () => {
         className="card w-96 p-8 shadow-lg bg-base-100 flex flex-col gap-y-4"
       >
         <h4 className="text-center font-bold text-3xl">Register</h4>
-        <FormInput
-          type="text"
-          label="name"
-          name="name"
-          defaultValue="name"
-        />
+        <FormInput type="text" label="username" name="username" defaultValue="name" />
         <FormInput
           type="email"
           label="email"
           name="email"
-          defaultValue="example@.com"
+          defaultValue="example@gmail.com"
         />
         <FormInput
           type="password"
@@ -42,6 +57,6 @@ const Register = () => {
       </Form>
     </section>
   );
-}
+};
 
-export default Register
+export default Register;
