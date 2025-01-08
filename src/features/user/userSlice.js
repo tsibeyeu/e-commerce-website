@@ -9,17 +9,18 @@ function getItemFromLocalStorage() {
 }
 const initialState = {
   user: { username: "tsion beyene" },
-  theme:getItemFromLocalStorage(),
+  theme: getItemFromLocalStorage(),
 };
 const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
     loginUser: (state, action) => {
-      console.log("login");
+      state.user = action.payload;
+      console.log("user payload",action.payload);
     },
     logoutUser: (state) => {
-      state.user =null;
+      state.user = null;
       localStorage.removeItem("user");
       toast.success("Logged out");
     },
