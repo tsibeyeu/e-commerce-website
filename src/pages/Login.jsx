@@ -13,11 +13,9 @@ export const action =
 
     try {
       const response = await customFetch.post("/auth/local", data);
-      console.log(response);
       store.dispatch(loginUser(response.data));
       toast.success("login successfully");
-      //  return redirect('/');
-      return null;
+       return redirect('/');
     } catch (error) {
       const errorMessage =
         error?.response?.data?.error?.message ||
