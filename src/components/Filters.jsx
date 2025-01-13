@@ -5,6 +5,7 @@ import FormCheckbox from "./FormCheckbox";
 import { Form, useLoaderData, Link } from "react-router-dom";
 const Filters = () => {
   const { meta,params } = useLoaderData();
+  console.log("meta in filter",meta)
   const { search,category, company, order, price, shipping } = params;
   return (
     <Form className="bg-base-200 rounded-md px-8 py-4 grid gap-x-4 gap-y-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center">

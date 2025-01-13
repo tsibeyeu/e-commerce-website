@@ -1,0 +1,186 @@
+{
+  "products": {
+   
+      "data": [
+        {
+          "id": 19,
+          "attributes": {
+            "title": "avant-garde lamp",
+            "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+            "category": "Kids",
+            "colors": ["#33FF57", "#3366FF"],
+            "image": "https://i.pinimg.com/736x/5d/13/a6/5d13a64ad0ef30b7ad14943bb29ffc05.jpg",
+            "price": "17999",
+            "shipping": false,
+            "featured": true,
+            "createdAt": "2023-08-10T10:07:41.876Z",
+            "publishedAt": "2023-08-10T10:07:44.157Z",
+            "updatedAt": "2023-08-10T10:16:43.298Z"
+          }
+        },
+        {
+          "id": 12,
+          "attributes": {
+            "title": "chic chair",
+            "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+            "category": "Chairs",
+            "colors": ["#FF5733", "#33FF57", "#3366FF"],
+            "image": "https://i.pinimg.com/474x/31/cd/d5/31cdd5790db0905b8ead7908d9e87799.jpg",
+            "price": "33999",
+            "shipping": true,
+            "featured": false,
+            "createdAt": "2023-08-10T09:32:58.392Z",
+            "publishedAt": "2023-08-10T09:33:03.598Z",
+            "updatedAt": "2023-08-10T09:33:03.728Z"
+          }
+        },
+        {
+          "id": 13,
+          "attributes": {
+            "title": "chic chair",
+            "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+            "category": "Chairs",
+            "colors": ["#FF5733", "#33FF57", "#3366FF"],
+            "image": "https://i.pinimg.com/474x/17/22/2e/17222eedaef596240bad477bbcc9942d.jpg",
+            "price": "33999",
+            "shipping": true,
+            "featured": false,
+            "createdAt": "2023-08-10T09:32:58.392Z",
+            "publishedAt": "2023-08-10T09:33:03.598Z",
+            "updatedAt": "2023-08-10T09:33:03.728Z"
+          }
+        },
+        {
+          "id": 14,
+          "attributes": {
+            "title": "chic chair",
+            "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+            "category": "Chairs",
+            "colors": ["#FF5733", "#33FF57", "#3366FF"],
+            "image": "https://i.pinimg.com/474x/13/c5/73/13c573595a59ab33a0e7e8a970fc8caf.jpg",
+            "price": "33999",
+            "shipping": true,
+            "featured": false,
+            "createdAt": "2023-08-10T09:32:58.392Z",
+            "publishedAt": "2023-08-10T09:33:03.598Z",
+            "updatedAt": "2023-08-10T09:33:03.728Z"
+          }
+        },
+        {
+          "id": 18,
+          "attributes": {
+            "title": "chic chair",
+            "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+            "category": "Chairs",
+            "colors": ["#FF5733", "#33FF57", "#3366FF"],
+            "image": "https://i.pinimg.com/474x/91/cb/91/91cb91650a9eaf852aa37e12c3ff0bc4.jpg",
+            "price": "33999",
+            "shipping": true,
+            "featured": false,
+            "createdAt": "2023-08-10T09:32:58.392Z",
+            "publishedAt": "2023-08-10T09:33:03.598Z",
+            "updatedAt": "2023-08-10T09:33:03.728Z"
+          }
+        },
+        {
+          "id": 20,
+          "attributes": {
+            "title": "chic chair",
+            "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+            "category": "Chairs",
+            "colors": ["#FF5733", "#33FF57", "#3366FF"],
+            "image": "https://i.pinimg.com/474x/f1/a0/ba/f1a0ba80257d2e6fd87c8a2676609c5d.jpg",
+            "price": "33999",
+            "shipping": true,
+            "featured": false,
+            "createdAt": "2023-08-10T09:32:58.392Z",
+            "publishedAt": "2023-08-10T09:33:03.598Z",
+            "updatedAt": "2023-08-10T09:33:03.728Z"
+          }
+        },
+        {
+          "id": 21,
+          "attributes": {
+            "title": "chic chair",
+            "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+            "category": "Chairs",
+            "colors": ["#FF5733", "#33FF57", "#3366FF"],
+            "image": "https://i.pinimg.com/474x/44/0d/b3/440db3d57311321d920817e29432264c.jpg",
+            "price": "33999",
+            "shipping": true,
+            "featured": false,
+            "createdAt": "2023-08-10T09:32:58.392Z",
+            "publishedAt": "2023-08-10T09:33:03.598Z",
+            "updatedAt": "2023-08-10T09:33:03.728Z"
+          }
+        },
+        {
+          "id": 22,
+          "attributes": {
+            "title": "chic chair",
+            "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+            "category": "Chairs",
+            "colors": ["#FF5733", "#33FF57", "#3366FF"],
+            "image": "https://i.pinimg.com/474x/4a/2c/7a/4a2c7aec078358bd22d4b238dea31033.jpg",
+            "price": "33999",
+            "shipping": true,
+            "featured": false,
+            "createdAt": "2023-08-10T09:32:58.392Z",
+            "publishedAt": "2023-08-10T09:33:03.598Z",
+            "updatedAt": "2023-08-10T09:33:03.728Z"
+          }
+        },
+        {
+          "id": 23,
+          "attributes": {
+            "title": "chic chair",
+            "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+            "category": "Chairs",
+            "colors": ["#FF5733", "#33FF57", "#3366FF"],
+            "image": "https://i.pinimg.com/474x/f4/8f/b7/f48fb746b0a7133595a5027a2027b6cd.jpg",
+            "price": "33999",
+            "shipping": true,
+            "featured": false,
+            "createdAt": "2023-08-10T09:32:58.392Z",
+            "publishedAt": "2023-08-10T09:33:03.598Z",
+            "updatedAt": "2023-08-10T09:33:03.728Z"
+          }
+        },
+        {
+          "id": 24,
+          "attributes": {
+            "title": "chic chair",
+            "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+            "category": "Chairs",
+            "colors": ["#FF5733", "#33FF57", "#3366FF"],
+            "image": "https://i.pinimg.com/474x/7f/16/47/7f1647178f6f7eba6f285b413bf31f9a.jpg",
+            "price": "33999",
+            "shipping": true,
+            "featured": false,
+            "createdAt": "2023-08-10T09:32:58.392Z",
+            "publishedAt": "2023-08-10T09:33:03.598Z",
+            "updatedAt": "2023-08-10T09:33:03.728Z"
+          }
+        }
+      ],
+      
+      "meta": {
+        "categories": ["all", "Tables", "Chairs", "Kids", "Sofas", "Beds"],
+        "companies": [
+          "all",
+          "Modenza",
+          "Luxora",
+          "Artifex",
+          "Comfora",
+          "Homestead"
+        ],
+        "pagination": {
+          "page": 1,
+          "pageCount": 3,
+          "pageSize": 10,
+          "total": 22
+        }
+      }
+    }
+  }
+

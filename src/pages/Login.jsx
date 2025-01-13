@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { Form, Link, redirect } from "react-router-dom";
+import { Form, Link, redirect, useNavigate } from "react-router-dom";
 import { FormInput, SubmitBtn } from "../components";
 import { toast } from "react-toastify";
 import { customFetch } from "../utils";
@@ -15,7 +15,7 @@ export const action =
       const response = await customFetch.post("/auth/local", data);
       store.dispatch(loginUser(response.data));
       toast.success("login successfully");
-       return redirect('/');
+      return redirect("/");
     } catch (error) {
       const errorMessage =
         error?.response?.data?.error?.message ||
@@ -26,6 +26,22 @@ export const action =
     }
   };
 const Login = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  //create async function
+  const loginGuestUser = async () => {
+    try {
+      const response = await customFetch.post("/auth/local", {
+        identifier: "test@gmail.com",
+        password: "secret",
+      });
+      dispatch(loginUser(response.data));
+      toast.success("login as Guest");
+      navigate("/");
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <section className="h-screen grid place-items-center">
       <Form
@@ -33,18 +49,8 @@ const Login = () => {
         className="card w-96 p-8 shadow-lg bg-base-100 flex flex-col gap-y-4"
       >
         <h4 className="text-center font-bold text-3xl">Login</h4>
-        <FormInput
-          type="email"
-          label="email"
-          name="identifier"
-          defaultValue="example@.com"
-        />
-        <FormInput
-          type="password"
-          label="password"
-          name="password"
-          defaultValue="secret"
-        />
+        <FormInput type="email" label="email" name="identifier" />
+        <FormInput type="password" label="password" name="password" />
         <div className="mt-4">
           <SubmitBtn text="Login" />
         </div>

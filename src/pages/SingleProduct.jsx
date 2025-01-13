@@ -6,12 +6,12 @@ import { useDispatch } from "react-redux";
 
 export const loader = async ({ params }) => {
   const response = await customFetch(`/products/${params.id}`);
-  // console.log(response);
 
   return { product: response.data.data };
 };
 const SingleProduct = () => {
   const { product } = useLoaderData();
+  console.log(product);
   const { title, company, description, colors, price, image } =
     product.attributes;
   const dollarsAmount = formatPrice(price);

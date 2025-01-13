@@ -4,8 +4,8 @@ import { logoutUser } from "../features/user/userSlice";
 import { clearCart } from "../features/cart/cartSlice";
 
 const Header = () => {
-  const user = useSelector((state) => state.user.user.user);
-  console.log("useruser",user);
+  const userState = useSelector((state) => state.user.user?.user);
+  console.log('userState',userState);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleLogout = () => {
@@ -13,12 +13,13 @@ const Header = () => {
     dispatch(logoutUser());
     dispatch(clearCart());
   };
+  const username = userState?.username ||  "Guest";
   return (
     <header className="bg-neutral py-2  text-neutral-content">
       <div className="align-element flex justify-center sm:justify-end ">
-        {user ? (
+        {userState ? (
           <div className="flex gap-x-2 sm:gap-x-8 items-center">
-            <p className="text-xs sm:text-sm capitalize">Hello, {user.username}</p>
+            <p className="text-xs sm:text-sm capitalize">Hello, {username}</p>
             <button
               onClick={handleLogout}
               className="btn btn-xs btn-outline btn-primary capitalize"
@@ -29,7 +30,7 @@ const Header = () => {
         ) : (
           <div className="flex justify-center gap-x-6 items-center">
             <Link to="/login" className="link link-hover text-xs sm:text-sm">
-              Sign in/Guest
+              Sign in/ Guest
             </Link>
             <Link to="/register" className="link link-hover text-xs sm:text-sm">
               Create Account
