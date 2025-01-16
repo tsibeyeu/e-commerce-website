@@ -5,6 +5,7 @@ import {addItem} from "../features/cart/cartSlice";
 import { useDispatch } from "react-redux";
 
 export const loader = async ({ params }) => {
+  console.log("this is RESPONSE FROM Single PRODUCT",params);
   const response = await customFetch(`/products/${params.id}`);
 
   return { product: response.data.data };

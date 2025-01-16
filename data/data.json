@@ -1,7 +1,7 @@
 {
-  "products": {
+ 
    
-      "data": [
+      "products": [
         {
           "id": 19,
           "attributes": {
@@ -182,5 +182,5 @@
         }
       }
     }
-  }
+  
 

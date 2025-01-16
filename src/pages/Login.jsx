@@ -20,7 +20,6 @@ export const action =
       const errorMessage =
         error?.response?.data?.error?.message ||
         "please double check your credentials";
-
       toast.error(errorMessage);
       return null;
     }
@@ -29,17 +28,19 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   //create async function
-  const loginGuestUser = async () => {
+  const loginAsGuestUser = async (event) => {
+    event.preventDefault();
     try {
       const response = await customFetch.post("/auth/local", {
-        identifier: "test@gmail.com",
+        identifier: "test@test.com",
         password: "secret",
       });
       dispatch(loginUser(response.data));
-      toast.success("login as Guest");
+      toast.success("welcome guest user");
       navigate("/");
     } catch (error) {
-      console.error(error);
+      console.log(error);
+      toast.error("guest user login error.please try later.");
     }
   };
   return (
@@ -54,7 +55,12 @@ const Login = () => {
         <div className="mt-4">
           <SubmitBtn text="Login" />
         </div>
-        <button className="btn btn-primary btn-block">Guest User</button>
+        <button
+          className="btn btn-primary btn-block"
+          onClick={loginAsGuestUser}
+        >
+          Guest User
+        </button>
         <p className="text-center">
           Not Registerd Yet?{" "}
           <Link
