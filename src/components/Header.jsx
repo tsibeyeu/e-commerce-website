@@ -4,7 +4,8 @@ import { logoutUser } from "../features/user/userSlice";
 import { clearCart } from "../features/cart/cartSlice";
 
 const Header = () => {
-  const userState = useSelector((state) => state.user.user?.user);
+  const userState = useSelector((state) => state.user.user);
+  console.log('userState',userState);
   console.log('userState',userState);
   const dispatch = useDispatch();
   const navigate = useNavigate();

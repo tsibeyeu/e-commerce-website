@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { formatPrice } from "../utils";
-const FormRange = ({ label, name, size, defaultValue }) => {
+const FormRange = ({ label, name, size }) => {
   const step = 1000;
   const maxPrice = 100000;
-  const [selectedPrice, setSelectedPrice] = useState(defaultValue || maxPrice);
+  const [selectedPrice, setSelectedPrice] = useState(maxPrice);
   return (
     <div className="form-control">
       <label htmlFor={name} className="label cursor-pointer">

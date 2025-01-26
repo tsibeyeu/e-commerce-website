@@ -40,12 +40,12 @@ const Filters = () => {
         defaultValue={order}
       />
       <FormRange name="price" label="select price" size="range-sm"  defaultValue={price}/>
-      <FormCheckbox label='free shipping' name='shipping' size='checkbox-sm'defaultValue={shipping} />
+      <FormCheckbox label='free shipping' name='shipping' size='checkbox-sm' defaultValue={shipping} />
 
       <button type="submit" className="btn btn-primary btn-sm ">
         Search
       </button>
-      <Link type="submit" className="btn btn-accent btn-sm ">
+      <Link to="/products" type="submit" className="btn btn-accent btn-sm ">
         Reset
       </Link>
     </Form>
