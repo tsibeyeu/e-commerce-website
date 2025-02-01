@@ -33,8 +33,9 @@ export const action =
     } catch (error) {
       console.log(error);
       const errorMessage =
-        error?.response?.data?.message || "there was an error making order";
+        error?.response?.data?.error?.message ||"Error occured when placing order"; ;
       toast.error(errorMessage);
+      if(error.response.status === 401 || error.response.status === 403) return redirect("/login");
       return null;
     }
   };
