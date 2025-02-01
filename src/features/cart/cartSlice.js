@@ -36,7 +36,7 @@ const cartSlice = createSlice({
       const product = state.cartItems.find((i) => i.cartID === cartID);
       state.cartItems = state.cartItems.filter((i) => i.cartID !== cartID);
       state.numItemsInCart -= product.amount;
-      state.cartTotal = state.price * product.amount;
+      state.cartTotal -= state.price * product.amount;
       cartSlice.caseReducers.calculateTotals(state);
       toast.error("Item removed from cart");
     },
@@ -50,7 +50,7 @@ const cartSlice = createSlice({
       const item=state.cartItems.find((i)=> i.cartID === cartID);
       // update no of cart items  by adding new amount minus the current amount
       state.numItemsInCart  +=amount - item.amount;
-      state.cartTotal += state.price * (amount - item.amount);
+      state.cartTotal += item.price * (amount - item.amount);
       item.amount=amount;
       cartSlice.caseReducers.calculateTotals(state);
       toast.success("Cart updated");
