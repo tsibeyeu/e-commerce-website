@@ -4,16 +4,18 @@ const themes = {
   dracula: "dracula",
   winter: "winter",
 };
-function getItemFromLocalStorage() {
-  return localStorage.getItem("theme") || themes.winter;
-}
+const getThemeFromLocalStorage = () => {
+  const theme = localStorage.getItem('theme') || themes.winter;
+  document.documentElement.setAttribute('data-theme', theme);
+  return theme;
+};
 function getUserFromLocalStorage() {
   return JSON.parse(localStorage.getItem("user")) || null;
 }
 const initialState = {
   // user: { username: "tsion beyene" },
   user: getUserFromLocalStorage(),
-  theme: getItemFromLocalStorage(),
+  theme: getThemeFromLocalStorage(),
 };
 const userSlice = createSlice({
   name: "user",

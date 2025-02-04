@@ -11,7 +11,6 @@ const links = [
 ];
 const Navlinks = () => {
   const user =useSelector(state => state.user.user);
- console.log(user);
   return (
     <>
       {links.map((link) => {

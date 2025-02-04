@@ -5,7 +5,6 @@ import FormCheckbox from "./FormCheckbox";
 import { Form, useLoaderData, Link } from "react-router-dom";
 const Filters = () => {
   const { meta,params } = useLoaderData();
-  console.log("meta in filter",meta)
   const { search,category, company, order, price, shipping } = params;
   return (
     <Form className="bg-base-200 rounded-md px-8 py-4 grid gap-x-4 gap-y-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center">
@@ -39,7 +38,12 @@ const Filters = () => {
         size="select-sm"
         defaultValue={order}
       />
-      <FormRange name="price" label="select price" size="range-sm"  defaultValue={price}/>
+      <FormRange
+        name='price'
+        label='select price'
+        size='range-sm'
+        price={price}
+      />
       <FormCheckbox label='free shipping' name='shipping' size='checkbox-sm' defaultValue={shipping} />
 
       <button type="submit" className="btn btn-primary btn-sm ">

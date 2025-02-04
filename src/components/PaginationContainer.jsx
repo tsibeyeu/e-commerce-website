@@ -3,7 +3,6 @@ const PaginationContainer = () => {
   const { meta } = useLoaderData();
   const { page, pageCount } = meta.pagination;
   const pages = Array.from({ length: pageCount }, (_, i) => i + 1);
-  console.log("meta pagination", meta.pagination);
   const { search, pathname } = useLocation();
   const navigate = useNavigate();
   const handlePageChange = (pageNumber) => {
@@ -30,7 +29,6 @@ const PaginationContainer = () => {
         </button>
         {pages.map(
           (pageNumber) => (
-            console.log(pageNumber),
             (
               <button
                 key={pageNumber}

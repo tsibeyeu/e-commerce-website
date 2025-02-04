@@ -7,28 +7,35 @@ import image5 from "../assets/girl5.jpg";
 const carouselImages = [image1, image5, image3, image4, image2];
 const Hero = () => {
   return (
-    <div className=" grid grid-cols-1 lg:grid-cols-2 items-center gap-24">
+    <div className=" grid lg:grid-cols-2  gap-24 items-center">
       <div>
-        <h1 className="max-w-2xl text-4xl font-bold tracking-tight">
+        <h1 className="max-w-2xl text-5xl font-bold tracking-tight sm:text-6xl">
           {" "}
-          Change the way you shop!
+          We are changing the way people shop
         </h1>
-        <p className="max-w-lg text-lg leading-8 mt-8">
+        <p className="max-w-xg text-lg leading-8 mt-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sed
           inventore iure exercitationem officia error mollitia praesentium
           minima, dolor itaque libero quae eaque laborum vel quis odio esse
           ratione nam.
         </p>
-        <div className="btn btn-primary mt-2">
-          <Link to="products">Our Products</Link>
+        <div className="mt-10">
+          <Link className="btn btn-primary mt-2" to="products">
+            Our Products
+          </Link>
         </div>
       </div>
-      <div className=" hidden h-[28rem] lg:carousel space-x-4 carousel-center p-4 bg-neutral rounded-box">
-        <div className="carousel-item">
-          {carouselImages.map((image, index) => (
-            <img className="h-full object-cover w-80 rounded-box" src={image} key={index} />
-          ))}
-        </div>
+      <div className='hidden h-[28rem] lg:carousel carousel-center p-4 space-x-4 bg-neutral rounded-box '>
+        {carouselImages.map((image) => {
+          return (
+            <div key={image} className='carousel-item'>
+              <img
+                src={image}
+                className='rounded-box h-full w-80 object-cover'
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

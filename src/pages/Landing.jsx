@@ -13,7 +13,6 @@ export const loader = async () => {
 const Landing = () => {
   return (
     <>
-      <div>Landing</div>
       <Hero />
       <FeaturedProducts />
     </>

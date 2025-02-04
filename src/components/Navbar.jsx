@@ -14,13 +14,14 @@ const Navbar = () => {
   const numItemInCart = useSelector((state) => state.cart.numItemsInCart);
   return (
     <nav className="bg-base-200">
-      <div className="align-element navbar">
-        <div className="navbar-start menu menu-horizontal">
+       <div className='navbar align-element'>
+        <div className='navbar-start'>
+          {/* TITLE */}
           <NavLink
-            to="/"
-            className=" hidden lg:flex align-element text-3xl items-center btn btn-outline"
+            to='/'
+            className='hidden lg:flex btn btn-primary text-3xl items-center'
           >
-            T
+            C
           </NavLink>
           <div className="dropdown">
             <label className="btn-ghost btn lg:hidden" tabIndex={0}>
